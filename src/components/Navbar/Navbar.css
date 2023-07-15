@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 45px;
+  /* text-align: center; */
+  vertical-align: middle;
+  letter-spacing: 3%;
+  background: linear-gradient(#0096FF 42.14%, #0048FF 96.7%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.navbar-container {
+  /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 24px 80px; */
+    /* gap: 10px; */
+    width: 100%;
+    margin-top: 5px;
+    height: 8vh;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+  }
+
+.left-container {
+
+    height: 45px;
+    width: 420px;
+    margin-left: 5%;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap:5px; */
+    
+}
+
+.right-container {
+  position: absolute;
+  right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    padding: 0;
+    gap: 64px;
+    width: 364px;
+    /* height: 40px; */
+    
+}
+
+.search-here{
+  width: 19px;
+  height: 18px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.menu-item {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+    /* width: 1px; */
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menu-item svg {
+    left: 6px;
+    top: 8.580078125px;
+    height: 7.420000076293945px;
+    width: 12px;
+    border-radius: 0;
+  }
+
+  .join-now {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 39px;
+    gap: 10px;
+    width: 198px;
+    height: 40px;
+    background: linear-gradient(266.79deg, #0048FF 4.63%, #0096FF 100%);
+    border-radius: 52px;
+    font-weight: 700;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
