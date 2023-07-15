@@ -65,6 +65,12 @@
   align-items: center;
 
 }
+.options  {
+  display: flex;
+  gap:15px;
+  flex-direction: row;
+  /* background-color: red; */
+}
 
 .menu-item {
 
@@ -75,9 +81,24 @@
     padding: 0;
     gap: 10px;
     /* width: 1px; */
-    height: 24px;
+    /* height: 24px; */
     position: relative;
     cursor: pointer;
+  }
+  .login {
+  
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      gap: 10px;
+      /* width: 1px; */
+      /* height: 24px; */
+      position: relative;
+      cursor: pointer;
+    
   }
   
   .menu-item svg {
@@ -104,4 +125,32 @@
     color: #FFFFFF;
     cursor: pointer;
   }
+  
 
+  @media only screen and (max-width: 960px) {
+    .navbar-container {position: relative;}
+    .options  {
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      gap:0px;
+      position: absolute;
+      right : 130px;
+     
+      font-size: 12px;
+      /* background-color: red; */
+    }
+    .login {
+      display: none;
+    }
+    .search-here {
+      display: none;
+    }
+    .join-now {
+      position: absolute;
+      right : -80px;
+      width: 100px;
+    }
+    
+    
+  }

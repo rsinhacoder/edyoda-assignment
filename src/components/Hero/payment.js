@@ -11,52 +11,69 @@ const Payment = () => {
   const [style, setStyle] = useState("text-field normal-text-field");
   const [stylepre, setStylepre] = useState("text-field normal-text-field");
   const [defaultSelection, setDefaultSelection] = useState(
-    "text-field new-offer"
+    "text-field new-offer "
   );
   const [icon12, setIcon12] = useState("hiding");
   const [icon6, setIcon6] = useState("hiding");
   const [icon3, setIcon3] = useState("hiding");
+  const [radioButton12, setRadioButton12] = useState("radio-button");
+  const [radioButton6, setRadioButton6] = useState("radio-button");
+  const [radioButton3, setRadioButton3] = useState("radio-button");
+  const changeStyle12 = () => {
+    setOriginalPrice("₹18,500");
+    setDiscount("₹18,321");
+    setTotalPrice("₹179");
+    setStyle("text-field normal-text-field");
+    setStylepre("text-field normal-text-field");
+    setDefaultSelection("text-field normal-text-field new-offer");
+    setIcon12("non-hiding");
+    setIcon6("hiding");
+    setIcon3("hiding");
+    setRadioButton12("hiding");
+    setRadioButton3("radio-button non-hiding");
+    setRadioButton6("radio-button non-hiding");
+  };
 
+  const changeStyle6 = () => {
+    setOriginalPrice("₹9,250");
+    setDiscount("₹9,101");
+    setTotalPrice("₹149");
+    setStyle("text-field normal-text-field new-offer");
+    setStylepre("text-field normal-text-field");
+    setDefaultSelection("text-field normal-text-field");
+    setIcon6("non-hiding");
+    setIcon12("hiding");
+    setIcon3("hiding");
+    setRadioButton6("hiding");
+    setRadioButton3("radio-button non-hiding");
+    setRadioButton12("radio-button non-hiding");
+  }
+
+  const changeStyle3 = () => {
+    setOriginalPrice("₹4,625");
+    setDiscount("₹4,526");
+    setTotalPrice("₹99");
+    setStylepre("text-field normal-text-field new-offer");
+    setStyle("text-field normal-text-field");
+    setDefaultSelection("text-field normal-text-field");
+    setIcon3("non-hiding");
+    setIcon6("hiding");
+    setIcon12("hiding");
+    setRadioButton3("hiding");
+    setRadioButton6("radio-button non-hiding");
+    setRadioButton12("radio-button non-hiding");
+  }
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
-    // console.log("you just clicked");
-
-    // setStyle("new-offer");
-    // Calculate the original price, discount, and total after discount based on the selected option
     switch (event.target.value) {
       case "12":
-        setOriginalPrice("₹18,500");
-        setDiscount("₹18,321");
-        setTotalPrice("₹179");
-        setStyle("text-field normal-text-field");
-        setStylepre("text-field normal-text-field");
-        setDefaultSelection("text-field normal-text-field new-offer");
-        setIcon12("non-hiding");
-        setIcon6("hiding");
-        setIcon3("hiding");
-
+        changeStyle12();
         break;
       case "6":
-        setOriginalPrice("₹9,250");
-        setDiscount("₹9,101");
-        setTotalPrice("₹149");
-        setStyle("text-field normal-text-field new-offer");
-        setStylepre("text-field normal-text-field");
-        setDefaultSelection("text-field normal-text-field");
-        setIcon6("non-hiding");
-        setIcon12("hiding");
-        setIcon3("hiding");
+        changeStyle6();
         break;
       case "3":
-        setOriginalPrice("₹4,625");
-        setDiscount("₹4,526");
-        setTotalPrice("₹99");
-        setStylepre("text-field normal-text-field new-offer");
-        setStyle("text-field normal-text-field");
-        setDefaultSelection("text-field normal-text-field");
-        setIcon3("non-hiding");
-        setIcon6("hiding");
-        setIcon12("hiding");
+        changeStyle3();
         break;
       default:
         setOriginalPrice("");
@@ -82,13 +99,7 @@ const Payment = () => {
       <div className="input-container">
         {/* Expired plan */}
         <div className="text-field">
-          <input
-            type="radio"
-            value="Male"
-            name="gender"
-            className="radio-button"
-            disabled
-          />
+          <input type="radio" className={radioButton12} disabled />
           <div className="disabled-text-dsc">12 Months Subscription</div>
           <div className="right-text-container">
             <div className="text-spans">
@@ -111,21 +122,12 @@ const Payment = () => {
             checked={selectedOption === "12"}
             onChange={handleOptionChange}
             name="subscriptionOption"
-            className="radio-button"
+            className={radioButton12}
             defaultChecked="true"
           />
           <label className={icon12}>
             <img className="radio-icon" src={greenCheck} alt="Green Check" />
           </label>
-
-          
-
-          {/* 
-                <label htmlFor="radio" className="radio-label">
-                    <img className="radio-icon" src={greenCheck} alt="Green Check" />
-                </label> */}
-
-          {/* <input type="radio" value="Male" name="gender" className="radio-button new-checked" checked/> */}
           <div className="disabled-text-dsc new-plan">
             12 Months Subscription
           </div>
@@ -138,11 +140,9 @@ const Payment = () => {
               <div className="price new-price">₹15 /mo</div>
             </div>
           </div>
+
           <div className="offer-expired recomended">Recomended</div>
         </div>
-        <label className={icon12}>
-          <img className="radio-icon" src={greenCheck} alt="Green Check" />
-        </label>
 
         {/* 6 month */}
         <div className={style}>
@@ -152,8 +152,8 @@ const Payment = () => {
             value="6"
             name="subscriptionOption"
             checked={selectedOption === "6"}
+            className={radioButton6}
             onChange={handleOptionChange}
-            className="radio-button"
           />
           <div className="disabled-text-dsc new-plan">
             6 Months Subscription
@@ -181,7 +181,7 @@ const Payment = () => {
             name="subscriptionOption"
             checked={selectedOption === "3"}
             onChange={handleOptionChange}
-            className="radio-button"
+            className={radioButton3}
           />
           <div className="disabled-text-dsc new-plan">
             3 Months Subscription

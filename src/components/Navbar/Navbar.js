@@ -8,6 +8,7 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="left-container">
         <div className="logo">EDYODA</div>
+        <div className="options">
         <div className="menu-item">
           Courses
           <svg
@@ -37,6 +38,7 @@ const Navbar = () => {
               fill="black"
             />
           </svg>
+          </div>
         </div>
       </div>
       <div className="right-container">
@@ -54,7 +56,7 @@ const Navbar = () => {
             />
           </svg>
         </container>
-        <div className="menu-item">Login</div>
+        <div className="login">Login</div>
         <button className="join-now">JOIN NOW</button>
       </div>
     </div>

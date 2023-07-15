@@ -1,118 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
 
-.content-container {
-  
-  display: flex;
-  flex-direction: row;
-  gap:30px;
-  width: 100%;
-  height: 1008px;
-  top: 72px;
-  background: rgba(23, 39, 70, 1);
-  background-image: url("../../assets/BackGround.png");
-  background-size: cover;
-  
-}
-
-
-.main-lookup {
-  /* background-color: red; */
-  margin-top:50px ;
+.courseDetailSection {
+  margin-top: 50px;
   margin-left: 50px;
-  height: 70vh;
-  width : 55vw;
+  height: 80vh;
+  width: 45vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 10px;
   gap: 48px;
 }
-.main-lookupx {
-  background-color: red;
-    margin-top: 72px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0;
-    gap: 48px;
-    /* position: absolute; */
-    width: auto;
-    height: 708px;
-    left: 144px;
-    top: 72px;
-    /* border: 1px solid white; */
+
+.mainHeader {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  color: #ffffff;
 }
 
-.header {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 46px;
-    /* line-height: 125%; */
-    /* identical to box height, or 70px */
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.01em;
-    /* border: 1px solid white; */
-  }
-
-.header2-wrap{
-    width: 680px;
-    color: #FFFFFF;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 46px;
-    line-height: 125%;
-    /* identical to box height, or 70px */
-
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.01em;
-    justify-content: space-between;
+.headerContainer {
+  width: 680px;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+  justify-content: space-between;
 }
 
-  .header2 {
-    font-family: 'Roboto', sans-serif;
-    /* font-style: normal; */
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 125%;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.01em;
-    position: relative;
-    /* justify-content: space-between; */
-  }
+.subHeader {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+  position: relative;
+}
 
-  .header2::before {
-    content: "";
-    position: absolute;
-    width: 161px;
-    height: 8px;
-    left: 44px;
-    top: 30px;
-    background: #FF0000;
-  }
-
-  .nintyNine {
-    font-family: 'Roboto', sans-serif;
-    font-size: 54px;
-    display: flex;
-    align-items: center;
-    color: #0096FF;
+.blueText {
+  font-family: "Roboto", sans-serif;
+  font-size: 54px;
+  display: flex;
+  align-items: center;
+  color: #0096ff;
 }
 .courses {
   display: flex;
   flex-direction: column;
-  gap:15px;
-
+  gap: 15px;
 }
-.course-details{
-
+.courseDetails {
   display: flex;
   flex-direction: row;
 }
@@ -127,10 +74,10 @@
   height: 68px;
 }
 
-.p-details {
+.description {
   /* width: 401px;
   height: 32px; */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -138,22 +85,23 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 70px;
 }
 
-.p-details span {
-  color: #0096FF;
+.description span {
+  color: #0096ff;
 }
 
 /* Form.css */
 .form-container {
+  overflow: hidden;
   margin-top: 50px;
   margin-bottom: 20px;
-  margin-right:100px;
-  background-color: #FFFFFF;
+  margin-right: 100px;
+  background-color: #ffffff;
   height: 110vh;
-  width: 30vw;
+  width: 50vw;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -164,7 +112,7 @@
 
 /* Form */
 
-.progress-wrap{
+.progress-wrap {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -189,12 +137,12 @@
 .progress-icon {
   width: 38px;
   height: 38px;
-  background: #0096FF;
+  background: #0096ff;
   border-radius: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   font-size: 20px;
 }
@@ -225,20 +173,21 @@
 
 .text-field {
   display: flex;
+  position: relative;
   flex-direction: row;
   align-items: center;
   padding: 16px;
   gap: 12px;
   width: 100%;
   height: 35px;
-  background: #E7E7E7;
-  border: 2px solid #BEBEBE;
+  /* background: #E7E7E7; */
+  border: 2px solid #bebebe;
   border-radius: 4px;
   position: relative;
 }
 
-.normal-text-field{
-  background: #FFFFFF;
+.normal-text-field {
+  background: #ffffff;
 }
 
 /* RadioButton.css */
@@ -258,8 +207,8 @@
 }
 
 .radio-icon {
-  height: 28px;
-  width: 28px;
+  height: 22px;
+  width: 24px;
   position: absolute;
   top: 22px;
   left: 16px;
@@ -276,7 +225,7 @@
 /* Hide the default radio button */
 .radio-label input[type="radio"] {
   position: absolute;
-  background-image: '../assets/green-check.png';
+  background-image: "../assets/green-check.png";
   /* z-index:-1; */
   cursor: pointer;
 }
@@ -291,29 +240,15 @@
   height: 32px;
   width: 32px;
   border-radius: 50%;
-  border: 2px solid #BEBEBE;
-  background-color: #FFFFFF;
+  border: 2px solid #bebebe;
+  background-color: #ffffff;
   cursor: pointer;
   position: relative;
   transition: background-color 0.3s;
 }
-.old-offer{
-    /* background-color: black; */
-    /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 16px;
-  gap: 12px;
-  width: 100%;
-  height: 35px;
-  background: #E7E7E7;
-  border: 2px solid #BEBEBE;4
-  border-radius: 4px;
-  position: relative; */
-}
-.new-offer{
+.new-offer {
   border-color: rgba(71, 186, 104, 1);
-  background-color: #D7EDDD;
+  background-color: #d7eddd;
 }
 
 /* .radio-button.checked {
@@ -328,11 +263,11 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .radio-button.checked .tick-mark {
-  background-color: #BEBEBE;
+  background-color: #bebebe;
 }
 
 .text-container {
@@ -350,7 +285,7 @@
 .disabled-text-dsc {
   width: 172px;
   height: 19px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -358,10 +293,10 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #BEBEBE;
+  color: #bebebe;
 }
 
-.new-plan{
+.new-plan {
   color: #000000;
 }
 
@@ -379,6 +314,9 @@
 /* TextSpans.css */
 
 .text-spans {
+  position: absolute;
+  right: 20px;
+  top: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -389,15 +327,14 @@
   /* align-items: flex-end; */
 }
 
-.new-plan{
+.new-plan {
   color: #000000;
 }
-
 
 .total-text {
   width: 27px;
   height: 16px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -405,18 +342,18 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #BEBEBE;
+  color: #bebebe;
   /* align-items: flex-end; */
 }
 
-.new-plan{
- color: #000000;
+.new-plan {
+  color: #000000;
 }
 
 .amount-text {
   width: 27px;
   height: 19px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -424,10 +361,10 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #BEBEBE;
+  color: #bebebe;
 }
 
-.new-amount{
+.new-amount {
   color: #000000;
 }
 
@@ -442,14 +379,17 @@
   height: 14px;
 }
 
-.new-buttom-text{
+.new-buttom-text {
   width: 47px;
   display: flex;
   justify-content: flex-end;
 }
 
 .price {
-  font-family: 'Roboto';
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -457,13 +397,13 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #BEBEBE;
+  color: #bebebe;
 }
-.new-price{
+.new-price {
   color: #000000;
 }
 
-.basic-price{
+.basic-price {
   color: #000000;
 }
 
@@ -475,13 +415,13 @@
   height: 16px;
   left: 62px;
   top: 0px;
-  background: #F77171;
+  background: #f77171;
   border-radius: 0px 0px 4px 4px;
   flex: none;
   order: 2;
   flex-grow: 0;
   z-index: 2;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -490,17 +430,17 @@
   align-items: center;
   justify-content: center;
   /* text-align: center; */
-  color: #FFFFFF;
+  color: #ffffff;
   /* Add any additional styles as needed */
 }
 
-.recomended{
-  background-color: #47BA68;;
+.recomended {
+  background-color: #47ba68;
 }
 
 .summery-container {
   display: flex;
-  background-color: #47BA68;
+  background-color: #47ba68;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -525,7 +465,7 @@
 .subscription-fee {
   width: 119px;
   height: 19px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -533,13 +473,13 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #3C4852;
+  color: #3c4852;
 }
 
 .subscription-amount {
   width: 61px;
   height: 16px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -548,12 +488,13 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #3C4852;
+  color: #3c4852;
 }
 
 .offer-alert {
+  position: relative;
   box-sizing: border-box;
-/* width:100%; */
+  /* width:100%; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -561,7 +502,25 @@
   gap: 4px;
   width: 105%;
   height: 76px;
-  background: linear-gradient(135deg, rgba(222, 67, 19, 0.2) 0%, rgba(222, 67, 19, 0.2) 0.75%, rgba(222, 67, 19, 0.2) 2.92%, rgba(222, 68, 20, 0.2) 6.37%, rgba(223, 69, 21, 0.2) 10.97%, rgba(223, 72, 22, 0.2) 16.59%, rgba(224, 75, 24, 0.2) 23.1%, rgba(225, 80, 27, 0.2) 30.37%, rgba(227, 86, 31, 0.2) 38.27%, rgba(229, 94, 36, 0.2) 46.66%, rgba(231, 104, 43, 0.2) 55.41%, rgba(235, 117, 51, 0.2) 64.39%, rgba(238, 132, 60, 0.2) 73.47%, rgba(243, 149, 71, 0.2) 82.52%, rgba(248, 169, 84, 0.2) 91.41%, rgba(254, 193, 99, 0.2) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(222, 67, 19, 0.2) 0%,
+    rgba(222, 67, 19, 0.2) 0.75%,
+    rgba(222, 67, 19, 0.2) 2.92%,
+    rgba(222, 68, 20, 0.2) 6.37%,
+    rgba(223, 69, 21, 0.2) 10.97%,
+    rgba(223, 72, 22, 0.2) 16.59%,
+    rgba(224, 75, 24, 0.2) 23.1%,
+    rgba(225, 80, 27, 0.2) 30.37%,
+    rgba(227, 86, 31, 0.2) 38.27%,
+    rgba(229, 94, 36, 0.2) 46.66%,
+    rgba(231, 104, 43, 0.2) 55.41%,
+    rgba(235, 117, 51, 0.2) 64.39%,
+    rgba(238, 132, 60, 0.2) 73.47%,
+    rgba(243, 149, 71, 0.2) 82.52%,
+    rgba(248, 169, 84, 0.2) 91.41%,
+    rgba(254, 193, 99, 0.2) 100%
+  );
   border-radius: 8px;
   border: 2px solid rgba(223, 69, 21, 1);
   /* display: flex;
@@ -575,7 +534,6 @@
   border: 2px solid #BEBEBE;
   border-radius: 4px;
   position: relative; */
-  
 }
 
 .alert-header {
@@ -587,7 +545,7 @@
   /* width: 90%; */
   /* height: 24px; */
   /* margin-right: -20px; */
- position: relative;
+  position: relative;
   margin-left: -20px;
   /* background-color: blueviolet; */
   display: flex;
@@ -597,14 +555,14 @@
   align-items: center;
   padding: 0px 24px 0px 24px;
   gap: 20px;
-  width: 400px;
+  width: 100%;
   height: 24px;
 }
 
 .offer-content-text {
   width: 129px;
   height: 19px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -612,15 +570,15 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #DE4313;
+  color: #de4313;
 }
 
-.offer-content-amount{
-  position:absolute;
-  right : 0px;
+.offer-content-amount {
+  position: absolute;
+  right: 0px;
   width: 72px;
   height: 16px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -628,7 +586,7 @@
   display: flex;
   align-items: flex-end;
   letter-spacing: 0.03em;
-  color: #3C4852;
+  color: #3c4852;
 }
 
 .alert-body {
@@ -652,13 +610,11 @@
   color: rgba(222, 67, 19, 1);
 }
 
-
 .offer-content {
-
   margin-left: -20px;
   /* width: 192px; */
   height: 17px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -666,7 +622,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #DE4313;
+  color: #de4313;
 }
 
 .text-container {
@@ -683,7 +639,7 @@
 .left-text {
   width: 300px;
   height: 19px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -691,14 +647,14 @@
   display: flex;
   align-items: center;
   text-align: center;
-   margin-left: 20px;
-  color: #3C4852;
+  margin-left: 20px;
+  color: #3c4852;
 }
 
 .right-text {
   width: 57px;
   height: 24px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -707,7 +663,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #3C4852;
+  color: #3c4852;
 }
 
 .button-container {
@@ -719,10 +675,7 @@
   gap: 16px;
   width: 500px;
   height: 60px;
-  
 }
-
-
 
 .secondary-button {
   display: flex;
@@ -733,7 +686,7 @@
   gap: 10px;
   width: 142.5px;
   height: 40px;
-  border: 2px solid #F77171;
+  border: 2px solid #f77171;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -741,7 +694,7 @@
 .secondary-button .button-text {
   width: 61px;
   height: 19px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -750,7 +703,7 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #F77171;
+  color: #f77171;
 }
 
 .primary-button {
@@ -762,7 +715,7 @@
   gap: 10px;
   width: 142.5px;
   height: 45px;
-  background: #47BA68;
+  background: #47ba68;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -770,7 +723,7 @@
 .primary-button .button-text {
   width: 128px;
   height: 19px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -779,11 +732,11 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .icon-container {
-position: relative;
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -801,40 +754,100 @@ position: relative;
   top: 10px;
 }
 
-
-
-
-
-
-
 .mainDiv {
-    width: 100%;
-    /* height: 100vh; */
-    background: rgba(23, 39, 70, 1);
-    background-image: url("../../assets/BackGround.png");
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    gap:10px;
+  overflow-x: hidden;
+  width: 100%;
+  /* height: 100vh; */
+  background: rgba(23, 39, 70, 1);
+  background-image: url("../../assets/BackGround.png");
+  background-size: cover;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 .data {
-    width : 55%;
-    height: 80vh;
-    /* background-color: red; */
-    display: flex;
+  width: 55%;
+  height: 80vh;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media only screen and (max-width: 1245px) {
+  .mainDiv {
+    width: 100%;
     flex-direction: column;
-    gap:10px;
-}
-.form {
-    width: 40%;
+  }
+  .courseDetailSection {
+    width: 80vw;
     height: 90vh;
-    /* background-color: hotpink; */
-}
+    margin-left: 15px;
+  }
+  .form-container {
+    width: 80vw;
+    height: 120vh;
+    margin: 20px;
+  }
+  .mainHeader {
+    font-size: 28px;
+  }
+  .subHeader {
+    font-size: 28px;
+  }
+  .headerContainer {
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+    line-height: 78%;
+  }
+  .nintyNine {
+    font-size: 28px;
+  }
 
-@media (min-width:786) {
-    .mainDiv{
-        background-color: yellow;
-        flex-direction: column;
-    }
-    
+  .courses {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .courseDetails {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .description {
+    position: absolute;
+    left: 10px;
+    margin-top: 20px;
+    width: 90vw;
+    font-size: 22px;
+    /* justify-self: center;
+    align-items: center; */
+  }
+  .detailSection {
+    width: 100vw;
+  }
+  .offer-alert {
+    position: relative;
+    width: 110%;
+  }
+
+  .offer-content-amount {
+    position: absolute;
+    right: 25px;
+  }
+  .text-container {
+    width: 100%;
+  }
+  .secondary-button {
+    width: 100px;
+  }
+  .primary-button {
+    width: 100px;
+  }
+  .icon-container {
+    margin-left: 85px;
+    height: 75px;
+  }
 }
